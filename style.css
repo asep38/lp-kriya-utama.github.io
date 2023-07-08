@@ -1,0 +1,212 @@
+:root {
+  --color-primary: #f58d17;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #777;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: #222;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+  transition: all 0.4s;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #f58d17;
+}
+img {
+  max-width: 100%;
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.shadow-on-hover {
+  transition: all 0.2s;
+}
+.shadow-on-hover:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================== */
+/* btn */
+.btn {
+  border-radius: 0;
+  padding: 14px 38px;
+}
+
+.btn.btn-brand {
+  color: #fff;
+  font-weight: 500;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn.btn-brand:hover {
+  background: #d17207;
+  border-color: #d17207;
+  color: #fff;
+}
+
+.bg-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ========== slider ========== */
+
+.slide-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/slider/slider-1.jpg);
+}
+.slide-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/slider/slider-2.jpg);
+}
+
+.slide-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/slider/slider-3.jpg);
+}
+
+#heroSlider h6::after,
+#heroSlider h6::before {
+  content: "";
+  width: 20px;
+  height: 4px;
+  background: #fff;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  background: rgba(0, 0, 0, 0.6);
+  width: 40px;
+  height: 70px;
+  margin: auto;
+}
+
+/* ========== about ========== */
+#about .divider {
+  width: 60px;
+  height: 2px;
+  display: block;
+  background: var(--color-primary);
+}
+
+/* intro text */
+.intro-text {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.intro-text p {
+  max-width: 500px;
+  margin: 16px auto 0 auto;
+}
+
+/* ========= insta Posts ========= */
+
+.insta-posts {
+  position: relative;
+  overflow: hidden;
+}
+
+.insta-posts .insta-btn {
+  width: 90px;
+  height: 90px;
+  /* background: #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 26px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: #fff;
+}
+
+.insta-posts img {
+  transition: all 0.4s;
+  /* height: 100%; */
+}
+.insta-posts:hover img {
+  transform: scale(1.2);
+}
+
+.insta-posts:hover .insta-btn {
+  opacity: 1;
+}
+
+/* ========== menu ========== */
+#product .nav-pills .nav-link {
+  background: #fff;
+  margin: 0 8px 0 8px;
+  color: #222;
+  border-radius: 100px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+#product .nav-pills .nav-link.active {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.product-item-content .stars {
+  color: var(--color-primary);
+}
+
+/* ======== */
+
+/* ========== footer ========== */
+
+footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/slider/slider-3.jpg);
+  padding: 120px 0 30px;
+}
+
+footer p,
+footer a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+footer .social-link a {
+  font-weight: normal;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+footer h1 {
+}
+
+.footer-bottom {
+  margin: 30px 0;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
